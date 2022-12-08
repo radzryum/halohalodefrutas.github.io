@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FREQUENTLY ASK QUESTIONS</title>
+	<link rel="stylesheet" type="text/css" href="css/Styles3.css">
+	<script src="https://kit.fontawesome.com/d5327027d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <center>
+        <div class="first"><h1>Frequently Ask Questions (FAQS)</h1>
+        </div>
+    <div class="accordion">
+       <div class="contentBx">
+           <div class="label"><h2>Where are you Located</h2></div>
+           <div class="content">
+                <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.7076813658564!2d120.9589653511332!3d14.729111777810942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b3b71237aaf3%3A0xe02a1250e8fb5b51!2sSTI%20College%20-%20Meycauayan!5e0!3m2!1sen!2sph!4v1666534748606!5m2!1sen!2sph"
+                 width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </center></p>
+           </div>
+       </div>
+    </div>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label"><h2>Do you deliver?</h2></div>
+            <div class="content">
+                <p>We deliver and accept cash on delivery method and its free delivery 
+                    if you ordered three or more, but around Bulacan area only, if it doesn't 
+                    reach our minimum order, we can still deliver but add a delivery fee, remember
+                    that its depends on your location in Bulacan.
+                </p>
+            </div>
+        </div>
+     </div>
+     <div class="accordion">
+        <div class="contentBx">
+            <div class="label"><h2>How can we order?</h2></div>
+            <div class="content">
+                <p>Through Cash and Online payment methods (Gcash and PayMaya)</p>
+            </div>
+        </div>
+     </div>
+     <div class="accordion">
+        <div class="contentBx">
+            <div class="label"><h2>Can I make changes to an order I already placed?</h2></div>
+            <div class="content">
+                <p>It is no longer possible to change the order because once you order, it will be delivered 
+                    immediately.
+                </p>
+            </div>
+        </div>
+     </div>
+     <div class="accordion">
+        <div class="contentBx">
+            <div class="label"><h2>When will I receive my order?</h2></div>
+            <div class="content">
+                <p>After you place your order and provide the address we will immediately process and deliver it.</p>
+            </div>
+        </div>
+     </div>
+     <div class="accordion">
+        <div class="contentBx">
+            <div class="label"><h2>What is your best seller?</h2></div>
+            <div class="content">
+                <p>All of our flavours are favored and dependent individual taste and personal preference.</p>
+            </div>
+        </div>
+     </div>
+     <script>
+         const accordion = document.getElementsByClassName
+         ('contentBx');
+         for (i = 0; i<accordion.length; i++){
+             accordion[i] .addEventListener('click', function(){
+                 this.classList.toggle('active')
+             })
+         }
+     </script>
+     </center>
+    <nav>
+        <div class="logo">
+        <bgcolor=#909721>
+            <img src="img/logo.png">
+        </div>
+        <ul class="head">
+            
+            <li ><a href="../index.html"><i class="fas fa-home"></i>&nbsp HOME </a></li>
+            <li ><a href="../html/about.html"><i class= "fas fa-question-circle"></i>&nbsp ABOUT</a></li>           
+            <li ><a href="../html3/contact.html"><i class="fas fa-id-card"></i>&nbsp CONTACT  </a></li>
+            <li class="active"><a href="#"><i class="fas fa-comment-dots"></i>&nbsp FAQS </a></li>
+            <li><a href="../reg_system/index.php"><i class="fas fa-user-plus"></i>&nbsp Log In </a></li></bgcolor>
+        </ul>
+    </nav>
+</body>
+</html>
