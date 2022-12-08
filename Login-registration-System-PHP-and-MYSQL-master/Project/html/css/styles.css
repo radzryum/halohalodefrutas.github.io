@@ -1,0 +1,141 @@
+body{
+    background-color: #95F0F4;
+    height: 100vh;
+	width: auto;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+}
+.main{
+	margin: auto;
+	
+}
+nav{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	min-height: 65px;
+	background-image: linear-gradient(45deg, yellow 30%, green);
+	box-shadow: 0 10px 15px rgba(0,0,0,0.8);
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+ ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+	margin-right: 20px;
+
+}
+ ul li{
+	display: inline-block;
+}
+ ul li a{
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	color:white;
+	padding: 7px 20px;
+	border: 4px solid transparent ;
+	border-radius: 30px;
+	transition: 0.7s ease;
+}
+ul li a:hover {
+	background-color: yellow;
+	color: #000;
+}
+ ul li.active a{
+	background-color: yellow;
+	color: #000;
+}
+.logo img{
+	position: relative;
+	float: left;
+	width: 65px;
+	height: auto;
+}
+.title img{
+ position: relative;
+
+ top: 80px;
+ width: 30% ;
+ max-height: auto;
+}
+.container{
+    
+    width: 1700px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 400px;
+    height: 350px;
+    background: radial-gradient(#fff,#46fccc);
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.8);
+    transition: transform 0.5s;
+}
+.container .box:hover{
+    transform: scale(1.1) ;
+	border-radius: 20px;
+    background: radial-gradient(#fff,yellowgreen);
+}
+
+.container .box h2{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 4em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+.container .box:hover h2{
+
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+}
+.container .box h3{
+    font-weight: 900;
+    position: relative;
+    font-size: 2.0em;
+    z-index: 2;
+    color: #333;
+    transition: 0.5s;
+}
+.container .box:hover h3{
+    font-size: 1.5em;
+    color: #349CBF;
+}
+.container .box p{
+    font-weight: bolder;
+    position: relative;
+    top: 60px;
+    z-index: 2;
+    color: #000;
+    transition: 0.5s;
+    font-size: 1.1em;
+    font-family: Rockwell;
+    opacity: 0.1;
+}
+.container .box:hover p{
+
+    color: #0C3F13;
+    opacity: 1;
+
+    transform: translateY(-40px);
+}

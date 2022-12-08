@@ -1,0 +1,181 @@
+body{
+    background-color: #95F0F4;
+    height: 100vh;
+	width: auto;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+}
+.main{
+	margin: auto;
+	
+}
+nav{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	min-height: 65px;
+	background-image: linear-gradient(45deg, yellow 30%, green);
+	box-shadow: 0 10px 15px rgba(0,0,0,0.8);
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+ ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+	margin-right: 20px;
+
+}
+ ul li{
+	display: inline-block;
+}
+ ul li a{
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	color:white;
+	padding: 7px 20px;
+	border: 4px solid transparent ;
+	border-radius: 30px;
+	transition: 0.7s ease;
+}
+ul li a:hover {
+	background-color: yellow;
+	color: #000;
+}
+ ul li.active a{
+	background-color: yellow;
+	color: #000;
+}
+.logo img{
+	position: relative;
+	float: left;
+	width: 65px;
+	height: auto;
+}
+h1{
+	font-size: 70px;
+	font-weight: 600;
+	text-align: center;
+	color: #2f82c1;
+	padding-top: 180px;
+	margin-bottom: 0;
+}
+p{
+	color: rgb(4, 119, 29);
+	text-align: center;
+	font-family: Poppins;
+	font-weight: 140px;
+	font-size: 19px;
+	margin-top: 0;
+}
+.media{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	width: 100%;
+	list-style: none;
+	
+}
+p {
+	font-family: Rockwell;
+	font-weight: bold;
+	font-style: italic;
+	color: green;
+	margin-bottom: 20px;
+  }
+  
+  
+  /* block-$ */
+  .block-effect {
+	font-size: calc(8px + 6vw);
+  }
+  
+  .block-reveal {
+	--t: calc(var(--td) + var(--d));
+  
+	color: transparent;
+	padding: 4px;
+  
+	position: relative;
+	overflow: hidden;
+  
+	animation: revealBlock 0s var(--t) forwards;
+  }
+  
+  .block-reveal::after {
+	content: '';
+  
+	width: 0%;
+	height: 100%;
+	padding-bottom: 4px;
+  
+	position: absolute;
+	top: 0;
+	left: 0;
+  
+	background: var(--text-color, linear-gradient(45deg, yellow 30%, yellowgreen));
+	animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+  }
+  
+  
+  /* animations */
+  @keyframes revealBlock {
+	100% {
+	  color: yellowgreen;
+	}
+  }
+  
+  @keyframes revealingIn {
+  
+	0% {
+	  width: 0;
+	}
+  
+	100% {
+	  width: 100%;
+	}
+  }
+  
+  @keyframes revealingOut {
+  
+	0% {
+	  transform: translateX(0);
+	}
+  
+	100% {
+	  transform: translateX(100%);
+	}
+  
+  }
+.btn {
+	
+	display: inline-block;
+	width: 30px;
+	height: 50px;
+	background: #f1f1f1;
+	margin: 9px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #000;
+	color: yellowgreen;
+	position: relative;
+	top: 60px;
+	right: 800px;
+}
+.btn i{
+	margin-left: -4px;
+	line-height: 50px;
+	font-size: 45px;
+}
+
+

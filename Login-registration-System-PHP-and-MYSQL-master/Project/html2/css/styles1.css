@@ -1,0 +1,119 @@
+body{
+    background-color: #95F0F4;
+    height: 100vh;
+	width: auto;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+}
+.main{
+	margin: auto;
+	
+}
+nav{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	min-height: 65px;
+	background-image: linear-gradient(45deg, yellow 30%, green);
+	box-shadow: 0 10px 15px rgba(0,0,0,0.8);
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+ ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+	margin-right: 20px;
+
+}
+ ul li{
+	display: inline-block;
+}
+ ul li a{
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	color:white;
+	padding: 7px 20px;
+	border: 4px solid transparent ;
+	border-radius: 30px;
+	transition: 0.7s ease;
+}
+ul li a:hover {
+	background-color: yellow;
+	color: #000;
+}
+ ul li.active a{
+	background-color: yellow;
+	color: #000;
+}
+.logo img{
+	position: relative;
+	float: left;
+	width: 65px;
+	height: auto;
+}
+.section{
+	position: relative;
+	top: 80px;
+	width: 100%;
+	min-height: 100vh;
+}
+.container{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 100px;
+}
+.content-section{
+	position: relative;
+	right: 140px;
+	width: 70%;
+}
+.image-section{
+	float:right;
+	width: 40px;
+}
+.image-section img{
+	position: fixed;
+	width: 800px;
+	height: auto;
+	bottom: 70px;
+	
+}
+
+.content-section .h3{
+	margin-top: 20px;
+}
+.content-section p{
+	margin: 10px;
+	font-family: Rockwell;
+	font-size: 17px;
+	line-height: 1.5;
+}
+p {
+	animation-duration: 1.2s;
+	animation-name: slideout;
+  }
+  
+  @keyframes slideout {
+	from {
+	  margin-left: 100%;
+	  width: 300%;
+	}
+  
+	to {
+	  margin-right: 0%;
+	  width: 100%;
+	}
+  }
+  
